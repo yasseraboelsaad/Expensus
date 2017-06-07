@@ -14,6 +14,8 @@
 		3BF029301EE832CF0005BD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0292F1EE832CF0005BD02 /* Assets.xcassets */; };
 		3BF029331EE832CF0005BD02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF029311EE832CF0005BD02 /* LaunchScreen.storyboard */; };
 		3BF0293B1EE8330F0005BD02 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0293A1EE8330F0005BD02 /* Main2.storyboard */; };
+		3BF0293F1EE837400005BD02 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0293E1EE837400005BD02 /* LoginViewController.swift */; };
+		3BF029411EE8374C0005BD02 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF029401EE8374C0005BD02 /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3BF029321EE832CF0005BD02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF029341EE832CF0005BD02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BF0293A1EE8330F0005BD02 /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
+		3BF0293E1EE837400005BD02 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3BF029401EE8374C0005BD02 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			children = (
 				3BF029281EE832CE0005BD02 /* FirstViewController.swift */,
 				3BF0292A1EE832CE0005BD02 /* SecondViewController.swift */,
+				3BF0293E1EE837400005BD02 /* LoginViewController.swift */,
+				3BF029401EE8374C0005BD02 /* SignupViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF0293F1EE837400005BD02 /* LoginViewController.swift in Sources */,
 				3BF0292B1EE832CE0005BD02 /* SecondViewController.swift in Sources */,
+				3BF029411EE8374C0005BD02 /* SignupViewController.swift in Sources */,
 				3BF029271EE832CE0005BD02 /* AppDelegate.swift in Sources */,
 				3BF029291EE832CE0005BD02 /* FirstViewController.swift in Sources */,
 			);
