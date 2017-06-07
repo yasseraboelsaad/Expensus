@@ -42,6 +42,9 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
         blur.frame = loginButton.bounds
         blur.isUserInteractionEnabled = false //This allows touches to forward to the button.
         loginButton.insertSubview(blur, at: 0)
+        
+        self.imageViewPicker.layer.cornerRadius = self.imageViewPicker.frame.size.width / 2.5;
+        self.imageViewPicker.clipsToBounds = true;
     }
 
     override func didReceiveMemoryWarning() {
