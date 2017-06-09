@@ -24,7 +24,7 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
        
         imagePicker.delegate = self
         
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

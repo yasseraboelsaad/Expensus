@@ -10,6 +10,12 @@ import UIKit
 
 class ExpenseItemCell: UITableViewCell {
 
+    @IBOutlet var expenseNameLabel: UILabel!
+    @IBOutlet var expenseDateLabel: UILabel!
+    @IBOutlet var expenseIcon: UIImageView!
+    @IBOutlet var expenseCostLabel: UILabel!
+    @IBOutlet var expenseTitleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +25,11 @@ class ExpenseItemCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func prepareForReuse() {
+        expenseCostLabel.text = ""
+        expenseTitleLabel.text = ""
     }
 
 }

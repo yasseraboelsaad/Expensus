@@ -1,40 +1,38 @@
 //
-//  LoginViewController.swift
+//  AddExpenseDetailsViewController.swift
 //  Expensus
 //
-//  Created by Yasser Abouel-Saad on 7/6/17.
+//  Created by Yasser Abouel-Saad on 9/6/17.
 //  Copyright © 2017 Yasser Abouel-Saad. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class AddExpenseDetailsViewController: UIViewController {
+
     @IBOutlet var backgroundImageView: UIImageView!
-    @IBOutlet var signupButton: UIButton!
-    @IBOutlet var signinButton: UIButton!
+    @IBOutlet var dateTextField: UITextField!
+    @IBOutlet var saveButton: UIButton!
+    @IBOutlet var descriptionTextField: UITextField!
+    @IBOutlet var costLabel: UILabel!
+    @IBOutlet var categoriesButtons: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.extraLight)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         backgroundImageView.addSubview(blurEffectView)
         
-        signupButton.contentHorizontalAlignment = .left
-        
-        signinButton.layer.cornerRadius = 5
-        signinButton.layer.borderWidth = 1
-        signinButton.layer.borderColor = UIColor.clear.cgColor
-        
-        let blur = UIVisualEffectView(effect: UIBlurEffect(style:
-            UIBlurEffectStyle.light))
-        blur.frame = signupButton.bounds
-        blur.isUserInteractionEnabled = false //This allows touches to forward to the button.
-        signupButton.insertSubview(blur, at: 0)
+        for button in categoriesButtons {
+            button.layer.cornerRadius = 10
+            button.layer.borderWidth = 5
+            button.layer.borderColor = UIColor.clear.cgColor
+        }
     }
 
     override func didReceiveMemoryWarning() {

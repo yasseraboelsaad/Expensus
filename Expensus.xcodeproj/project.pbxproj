@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		3B7AB1811EE8BEB4002B22EE /* ExpenseItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7AB1801EE8BEB4002B22EE /* ExpenseItemCell.swift */; };
 		3B9F009E1EE982180074AED3 /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9F009C1EE982180074AED3 /* Budget.storyboard */; };
+		3B9F00A21EE9874E0074AED3 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9F00A11EE9874E0074AED3 /* ExpenseItem.swift */; };
+		3BA2841D1EEB1DF80050CBA8 /* AddExpenseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2841C1EEB1DF80050CBA8 /* AddExpenseDetailsViewController.swift */; };
 		3BF029271EE832CE0005BD02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF029261EE832CE0005BD02 /* AppDelegate.swift */; };
-		3BF029291EE832CE0005BD02 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF029281EE832CE0005BD02 /* FirstViewController.swift */; };
-		3BF0292B1EE832CE0005BD02 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0292A1EE832CE0005BD02 /* SecondViewController.swift */; };
+		3BF029291EE832CE0005BD02 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF029281EE832CE0005BD02 /* ExpensesViewController.swift */; };
+		3BF0292B1EE832CE0005BD02 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0292A1EE832CE0005BD02 /* AddExpenseViewController.swift */; };
 		3BF0292E1EE832CF0005BD02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0292C1EE832CF0005BD02 /* Main.storyboard */; };
 		3BF029301EE832CF0005BD02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0292F1EE832CF0005BD02 /* Assets.xcassets */; };
 		3BF029331EE832CF0005BD02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF029311EE832CF0005BD02 /* LaunchScreen.storyboard */; };
@@ -22,10 +24,12 @@
 /* Begin PBXFileReference section */
 		3B7AB1801EE8BEB4002B22EE /* ExpenseItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseItemCell.swift; sourceTree = "<group>"; };
 		3B9F009D1EE982180074AED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Budget.storyboard; sourceTree = "<group>"; };
+		3B9F00A11EE9874E0074AED3 /* ExpenseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		3BA2841C1EEB1DF80050CBA8 /* AddExpenseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseDetailsViewController.swift; sourceTree = "<group>"; };
 		3BF029231EE832CE0005BD02 /* Expensus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expensus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF029261EE832CE0005BD02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BF029281EE832CE0005BD02 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3BF0292A1EE832CE0005BD02 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3BF029281EE832CE0005BD02 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		3BF0292A1EE832CE0005BD02 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		3BF0292D1EE832CF0005BD02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BF0292F1EE832CF0005BD02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF029321EE832CF0005BD02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,14 @@
 			name = TableViewCells;
 			sourceTree = "<group>";
 		};
+		3B9F00A01EE986FC0074AED3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B9F00A11EE9874E0074AED3 /* ExpenseItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		3BF0291A1EE832CE0005BD02 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +84,7 @@
 		3BF029251EE832CE0005BD02 /* Expensus */ = {
 			isa = PBXGroup;
 			children = (
+				3B9F00A01EE986FC0074AED3 /* Models */,
 				3B7AB17F1EE8BE8A002B22EE /* TableViewCells */,
 				3BF029261EE832CE0005BD02 /* AppDelegate.swift */,
 				3BF0293D1EE833320005BD02 /* ViewControllers */,
@@ -95,10 +108,11 @@
 		3BF0293D1EE833320005BD02 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3BF029281EE832CE0005BD02 /* FirstViewController.swift */,
-				3BF0292A1EE832CE0005BD02 /* SecondViewController.swift */,
+				3BF029281EE832CE0005BD02 /* ExpensesViewController.swift */,
+				3BF0292A1EE832CE0005BD02 /* AddExpenseViewController.swift */,
 				3BF0293E1EE837400005BD02 /* LoginViewController.swift */,
 				3BF029401EE8374C0005BD02 /* SignupViewController.swift */,
+				3BA2841C1EEB1DF80050CBA8 /* AddExpenseDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -177,12 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9F00A21EE9874E0074AED3 /* ExpenseItem.swift in Sources */,
 				3BF0293F1EE837400005BD02 /* LoginViewController.swift in Sources */,
 				3B7AB1811EE8BEB4002B22EE /* ExpenseItemCell.swift in Sources */,
-				3BF0292B1EE832CE0005BD02 /* SecondViewController.swift in Sources */,
+				3BF0292B1EE832CE0005BD02 /* AddExpenseViewController.swift in Sources */,
 				3BF029411EE8374C0005BD02 /* SignupViewController.swift in Sources */,
 				3BF029271EE832CE0005BD02 /* AppDelegate.swift in Sources */,
-				3BF029291EE832CE0005BD02 /* FirstViewController.swift in Sources */,
+				3BA2841D1EEB1DF80050CBA8 /* AddExpenseDetailsViewController.swift in Sources */,
+				3BF029291EE832CE0005BD02 /* ExpensesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
